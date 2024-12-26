@@ -1,0 +1,101 @@
+:root{
+    --primaryColor : #24126A;
+    --hoverLink : #df990c;
+    --whiteColor : #fff;
+    --blackColor : #333;
+    --bodyColor :#f9f9fa;
+}
+
+form {
+    width: 100%;
+    border-top: 3px solid var(--primaryColor);
+    border-bottom: 3px solid var(--primaryColor);
+    padding: 30px;
+    background-color: #f9f9fa;
+}
+
+.contact .info {
+    border-top: 3px solid var(--primaryColor);
+    border-bottom: 3px solid var(--primaryColor);
+    padding: 30px;
+    width: 100%;
+    background-color: #f9f9fa;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: var(--primaryColor);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #5f687b;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i , .contact .info .clock:hover i {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+}
+.info-parent{
+    padding: 0 !important;
+}
+.big-box{
+    margin: 10px;
+    background-color: #fff;
+    border-radius: .375rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    direction: ltr;
+}
+.big-box .active ,.address-parent h4 .active{
+    border-bottom: 1px solid var(--hoverLink);
+    background-color: var(--hoverLink);
+    color: var(--whiteColor) !important;
+}
+.box-address{
+    border-bottom: 1px solid var(--blackColor);
+    transition: 0.5s;
+}
+.big-box .box-address:last-child{
+    border-bottom: 0;
+}
+.box-address:hover{
+    border-bottom: 1px solid var(--hoverLink);
+    background-color: var(--hoverLink);
+    color: var(--whiteColor) !important;
+}
+.box-address:hover .address-parent h4{
+    color: var(--whiteColor) !important;
+}
+.address-parent{
+    padding: 10px;
+    direction: rtl;
+}
+.address-parent p{
+    margin-bottom: 0 !important;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: var(--hoverLink);
+}
+
+.contact .php-email-form button[type=submit] {
+    background: var(--primaryColor);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
